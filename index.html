@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal Solutions</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <style>
+        .EB-Garamond{
+            font-family: "EB Garamond", serif;
+        }
+    </style>
 
     <!-- tailwind and daisyui cdn -->
-
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+  
 
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,17 +29,19 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                'gradient-start': '#FF8938',
+                'gradient-end': '#B68C5A',
+                
               }
             }
           }
         }
       </script>
 </head>
-<body>
+<body class="EB-Garamond">
     <header>
         <div class="container mx-auto lg:px-24 px-8 py-8">
-            <div class="navbar bg-base-100">
+            <div class="navbar">
                 <div class="navbar-start">
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -51,14 +63,17 @@
                       class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                       <li><a href="#">Home</a></li>
                       <li><a href="#">Services</a>></li>
-                      <li><a href="#">Cases</a>></li>
+                      <li class=""><a href="#">Cases</a>></li>
                       <li><a href="#">Blog</a>></li>
                       <li><a href="#">Contact Us</a>></li>
                       
                      
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-xl">daisyUI</a>
+                  <div class="flex justify-center items-center gap-4">
+                    <img src="images/logo1.png" alt="">
+                    <h6 class="text-3xl font-extrabold text-[#414040]">Justice</h6>
+                  </div>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="flex justify-center items-center gap-8">
@@ -70,12 +85,190 @@
                   </ul>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn">Button</a>
+                  <button class=" btn bg-[#B68C5A] text-white">Free Consultation</button>
                 </div>
               </div>
         </div>
+
+     
+        <div class="container lg:px-24 px-8 py-8 mx-auto">
+            <div class="bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner.png)] bg-cover  w-full bg-center rounded-lg  lg:h-[96vh] h-[150vh] ">
+
+                <div class="text-center flex flex-col justify-center items-center text-white pt-24">
+                    <h1 class="text-3xl lg:text-7xl font-extrabold">We Provide Effective <br> 
+                        Legal Solutions</h1>
+                        <p class="w-3/4 mx-auto font-normal text-base py-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        
+                </div>
+                <div class="flex justify-center items-center gap-4 px-8 w-full">
+                    <input class="py-4 pl-5 rounded-lg w-[500px]" type="text" name="" id="" placeholder="Search Your Service">
+                    <button class="btn bg-[#B68C5A] px-10 py-4 h-14 border-0 ">Search</button>
+                </div>
+             </div>
+        </div>      
     </header>
-    <main></main>
+    <main>
+      <!-- legal practice area start -->
+      <section class="container mx-auto lg:px-24 px-8 py-8">
+        <h1 class="text-4xl font-extrabold text-[#414040] text-center">The Legal Practice Area </h1>
+        <p class="w-2/3 mx-auto text-center py-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+          <!-- card-1 -->
+          <div class="card bg-[#E7E7E7] flex-1 shadow-xl bg-gradient-to-r from-[#F3F3F3] to-[#F3F3F3] border-white box-border">
+            <figure class="px-10 pt-10">
+              <img
+                src="images/business.png"
+                alt="Business"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Business Law</h2>
+              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <div class="card-actions">
+                <img src="images/Frame.png" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- card-2 -->
+          <div class="card bg-[#E7E7E7] flex-1 shadow-xl bg-gradient-to-r from-[#F3F3F3] to-[#F3F3F3] border-white box-border">
+            <figure class="px-10 pt-10">
+              <img
+                src="images/criminal.png"
+                alt="Business"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Business Law</h2>
+              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <div class="card-actions">
+                <img src="images/Frame.png" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- card-3 -->
+          <div class="card bg-[#E7E7E7] flex-1 shadow-xl bg-gradient-to-r from-[#F3F3F3] to-[#F3F3F3] border-white box-border">
+            <figure class="px-10 pt-10">
+              <img
+                src="images/child.png"
+                alt="Business"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Business Law</h2>
+              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <div class="card-actions">
+                <img src="images/Frame.png" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- card-4 -->
+          <div class="card bg-[#E7E7E7] flex-1 shadow-xl bg-gradient-to-r from-[#F3F3F3] to-[#F3F3F3] border-white box-border">
+            <figure class="px-10 pt-10">
+              <img
+                src="images/education.png"
+                alt="Business"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Business Law</h2>
+              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <div class="card-actions">
+                <img src="images/Frame.png" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- card-5 -->
+          <div class="card bg-[#E7E7E7] flex-1 shadow-xl bg-gradient-to-r from-[#F3F3F3] to-[#F3F3F3] border-white box-border">
+            <figure class="px-10 pt-10">
+              <img
+                src="images/divorce.png"
+                alt="Business"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Business Law</h2>
+              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <div class="card-actions">
+                <img src="images/Frame.png" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- card-6 -->
+          <div class="card bg-[#E7E7E7] flex-1 shadow-xl bg-gradient-to-r from-[#F3F3F3] to-[#F3F3F3] border-white box-border">
+            <figure class="px-10 pt-10">
+              <img
+                src="images/tax.png"
+                alt="Business"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Business Law</h2>
+              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <div class="card-actions">
+                <img src="images/Frame.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- legal practice area end -->
+<!-- client say section start -->
+      <section class="container lg:px-24 px-8 py-8 mx-auto">
+        <h1 class="text-4xl font-extrabold text-center text-[#414040]">What Our Client Say</h1>
+        <p class="text-base tect-[#707070] opacity-70 w-2/3 mx-auto text-center py-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+
+        <div>
+          <div class="carousel w-full ">
+            <div id="slide1" class="carousel-item relative w-full bg-[linear-gradient(180deg,rgba(17,17,17,0.8),rgba(17,17,17,0.1)),url(./images/slider-1.jpg)] rounded-lg bg-center bg-cover h-[90vh] flex justify-center items-center">
+             <div class="text-white flex justify-center items-center bg-red-400 relative">
+              <div class="w-28 h-28 rounded-full bg-white box-border flex justify-center items-center absolute bottom-36">
+               <img class="w-16  opacity-65" src="images/dalim.png" alt="">
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <h1>Md.Dalim Miah</h1>
+              <h5>Software Developer</h5>
+              <p class="w-2/3">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+              </div>
+             </div>
+             
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+                class="w-full" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <!-- client say section end -->
+    </main>
     <footer></footer>
 </body>
 </html>
